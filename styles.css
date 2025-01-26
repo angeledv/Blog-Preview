@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ------ colors ------ */
+    --bg-color: #F4D04E;
+    --gray: #111111;
+    --light-gray: #6B6B6B;
+    --white: #ffffff;
+
+    /* ------ fonts ------ */
+    --small-font-size: clamp(12px, 2vw, 14px);
+    --medium-font-size: clamp(14px, 2.3vw, 16px);
+    --big-font-size: clamp(20px, 3.5vw, 24px);
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--gray);
+}
+
+h2 {
+    display: inline-block;
+    width: fit-content;
+    padding: 4px 12px;
+    font-size: var(--small-font-size);
+    font-weight: 800;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+h3 {
+    display: inline-block;
+    width: fit-content;
+    font-size: var(--big-font-size);
+    font-weight: 800;
+}
+
+h3:hover {
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    background-color: var(--bg-color);
+    display: grid;
+    place-content: center;
+}
+
+.card-container {
+    max-width: 384px;
+    min-width: 327px;
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 15px;
+    border: 1px solid var(--gray);
+    box-shadow: 8px 8px 1px var(--gray);
+}
+
+.card-image-container {
+    margin-block-end: 28px;
+}
+
+.card-image {
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.card-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-block-end: 24px;
+}
+
+.general-info {
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topic-info {
+    font-size: var(--medium-font-size);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topic-info p {
+    color: var(--light-gray);
+    font-weight: 500;
+}
+
+.card-author-container {
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-image {
+    max-width: 32px;
+    aspect-ratio: 1;
+}
